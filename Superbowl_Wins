@@ -1,0 +1,7 @@
+library("tidyverse")
+library(ggplot2)
+
+ggplot(Team_Superbowl_Wins, aes(x = Wins), stats = "bin") + 
+  geom_histogram(binwidth = 1, color="green", fill="white") + 
+  labs(title="Counts of The Super Bowl Winner's since 2012",
+       x ="Super Bowl Wins", y = "Count")
