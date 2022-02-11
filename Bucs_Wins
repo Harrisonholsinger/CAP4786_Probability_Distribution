@@ -1,0 +1,7 @@
+library("tidyverse")
+library(ggplot2)
+
+ggplot(Bucs_Wins, aes(x = Wins), stats = "bin") + 
+  geom_histogram(binwidth = 1, color="red", fill="black") + 
+  labs(title="Counts of Buccaneer's Wins since 2002",
+       x ="Wins per Season", y = "Count")
