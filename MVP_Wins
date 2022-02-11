@@ -1,0 +1,7 @@
+library("tidyverse")
+library(ggplot2)
+
+ggplot(MVP_Stats, aes(x = MVP), stats = "bin") + 
+  geom_histogram(binwidth = 1, color="red", fill="white") + 
+  labs(title="Counts of MVP Winner's since 2007",
+       x ="MVP Wins", y = "Count")
